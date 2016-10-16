@@ -35,7 +35,7 @@ img{
 	
 	}
 	#scoreBox{
-		height: 200px;
+		height: 300px;
 		width: 450px;
 		background-color: white;
 		color: red;
@@ -65,3 +65,19 @@ img{
 		font-size: 15px;
 		color:yellow;
 	}
+	footer{
+		text-align: center;
+		color: white;
+		font-family: 'Bungee Inline';
+		font-size: 12px;
+}
+.footBox{
+	width: auto;
+	height: 20px;
+	margin-top: 100px;
+}
+
+
+
+
+

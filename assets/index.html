@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crystal Game</title>
+	<title>The Amazing Crystal Game</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
@@ -16,65 +16,44 @@
 		<img src="http://fullhdpictures.com/wp-content/uploads/2015/12/Crystal-Backgrounds.jpg">
 	</div>  -->
 
-<h2>Guess The Right Combonation and Win Big!</h2>
-	<div class="container">
+<h2>Guess The Right Combination and Win Big!</h2>
+<div class="container">
 	<ul>
 		<li>Each Game You Will Be Given A Random Number</li>
-		<br>
-		<li>By clicking on the crystals below, Find the winning combonation of crystals to equal the target number and win!</li>
-		<br>
+			<br>
+		<li>By clicking on the crystals below, Find the winning combination of crystals to equal the target number and win!</li>
+			<br>
 		<li>If you go over the Target Number: you LOSE, the game is over, and you will be hurled into the crystal abyss!</li>
-		<br>
+			<br>
 		<li>Enjoy the magic and mystery of the crystal world and play again and again</li>
-		</ul>
-	</div>
-	<div id="scoreBox">
+	</ul>
+</div>
+<div id="scoreBox">
 		<p>Target Number: <span id="number"></span></p>
 		<p>Your Score:<span id="yourScore"></span></p>
-	<!--</div>
-	<div id="crystalBox">
-<!--<input type="image" name="submit" value="submit" src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=40626367" />-->
-<button style="display:inline-block; background: url(http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=40626367) no-repeat center;"><strong>Aqua Aura</strong>
+		<p>Wins:<span id="wins"></span></p>
+		<p>Losses:<span id="losses"></span></p>
+<button style="display:inline-block; background: url(http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=40626367) no-repeat center;" value="12"><strong>Aqua Aura</strong>
     
 </button>
-<button style="display:inline-block; background: url(https://s-media-cache-ak0.pinimg.com/originals/7b/d6/05/7bd605f59a9cd4907a448f8e197bffde.jpg)no-repeat center;"><strong>Amethyst</strong>
+<button style="display:inline-block; background: url(https://s-media-cache-ak0.pinimg.com/originals/7b/d6/05/7bd605f59a9cd4907a448f8e197bffde.jpg)no-repeat center;" value="8"><strong>Amethyst</strong>
 	
 </button>
-<button style="display:inline-block; background: url(https://s-media-cache-ak0.pinimg.com/originals/3b/d4/bf/3bd4bf428abb2c0051bb85913c6872b0.jpg)no-repeat center;"><strong>Smokey Quartz</strong>
+<button style="display:inline-block; background: url(https://s-media-cache-ak0.pinimg.com/originals/3b/d4/bf/3bd4bf428abb2c0051bb85913c6872b0.jpg)no-repeat center;" value="5"><strong>Smokey Quartz</strong>
 </button>
-<button style="display:inline-block; background: url(http://www.rocks-fossils.com/myblog/wp-content/uploads/2014/07/citrine002.gif)no-repeat center;"><strong>Citrine</strong>
+<button style="display:inline-block; background: url(http://www.rocks-fossils.com/myblog/wp-content/uploads/2014/07/citrine002.gif)no-repeat center;" value="1"><strong>Citrine</strong>
 </button>
 
-<!--		<img id="picks" src="https://s-media-cache-ak0.pinimg.com/originals/7b/d6/05/7bd605f59a9cd4907a448f8e197bffde.jpg">
-		<img id="picks" src="https://s-media-cache-ak0.pinimg.com/originals/3b/d4/bf/3bd4bf428abb2c0051bb85913c6872b0.jpg">
-		<img id="picks" src="http://www.rocks-fossils.com/myblog/wp-content/uploads/2014/07/citrine002.gif"> -->
-	</div>
+</div>
+
+<div class="footBox">
+	<footer>Copyright 2016 Josh Hoover</footer>
+</div>
 
 
-<script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-<script type="text/javascript">
+ <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
- //$(document).ready function(){
- 	var computerChoice = 1 + Math.floor(Math.random() *99);
- 	var userChoices= 0;
- 	var crystalValue = [17,8,5,1];
-
- 	function startGame(){
-	computerChoice = [Math.floor(Math.random)];
-		userChoices =0;
-}
- 	
- 	confirm('Are You Ready To Play?');
- 		$('#number').text(computerChoice);
-
-		$('#yourScore').text(userChoices);
- 			if(userChoices == computerChoice){
-				alert('Great Job! You are the crystal master');
-			}
-			if(userChoices > computerChoice){
-				alert('You LOSE! Now into the crystal abyss you go!');
-		}
-
+<script type="text/javascript" src="javascript/game.js">
  
 </script>
 </body>
