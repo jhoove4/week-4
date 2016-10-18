@@ -4,6 +4,7 @@
  	var crystalValue = [12,8,5,1];
  	var win = 0;
  	var loss = 0;
+ 	var yourScore=0;
 
  	computerChoice = 19 + Math.floor(Math.random() * 101);
 
@@ -13,26 +14,45 @@
   	// 	var buttonClicked = $(this).attr(crystalValue);
 
   	// });
- 	//function startGame(){
-	//computerChoice = 19 + Math.floor(Math.random() * 120);
-		//userChoices =0;
+ 	function startGame(){
+	computerChoice = 19 + Math.floor(Math.random() * 120);
+		yourScore =0;
+	}
 
  	
  	confirm('Are You Ready To Play?');
  	$('button').on('click', function(){
-  		var buttonClicked = $(this).attr(crystalValue);
+  		var buttonValue = $(this).attr('value');
+  		console.log(typeof buttonValue);
+  		console.log(typeof yourScore);
+  		buttonValue=parseInt(buttonValue);
+  		yourScore = yourScore + buttonValue;
+  		console.log(yourScore);
+  			$('#yourScore').html(yourScore);
 
+
+  			// buttonValue.push(crystalValue);
+  			// $('buttonValue').add(crystalValue);
   	});
+  	// $(userChoices).on('click', function(event){
+  	// 	userChoicess= $(this).attr(crystalValue);
+  	// 	console.log(crystalValue);
+  	// });
  		$('#number').append(computerChoice);
 
 
-		$('#yourScore').text(userChoices);
- 			if(userChoices == computerChoice){
+		$('#yourScore').append(userChoices);
+		// $('#yourScore').push(crystalValue);
+ 			if(yourScore == computerChoice){
+ 				win++;
+ 				startGame();
 				alert('Great Job! You are the crystal master');
 				 	confirm('Are You Ready To Play?');
 
 			}
-			if(userChoices > computerChoice){
+			if(yourScore > computerChoice){
+				loss++;
+				startGame();
 				alert('You LOSE! Now into the crystal abyss you go!');
 				 	confirm('Do You Dare To Play Again?');
 
