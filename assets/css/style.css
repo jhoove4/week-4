@@ -8,7 +8,8 @@ h2{
 	color:#00FFFF;
 	/*font-family: 'Ruslan Display';*/
 }
-body.background{
+body{
+	background-image:"http://fullhdpictures.com/wp-content/uploads/2015/12/Crystal-Backgrounds.jpg"
 	width: auto;
 	height: auto;
 } 
@@ -41,15 +42,15 @@ img{
 		color: red;
 		font-size: 20px;
 		font-family: 'Bungee Inline';
-		margin: 10px;
+		margin: 15px;
 		background-color: #000080;
 	}
-	#crystalBox{
+	/*#crystalBox{
 		width: 470px;
 		height: 120px;
 		background-color: purple;
 		margin: 5px;
-	}
+	}*/
 	/*#picks{
 		width: 100px;
 		height: 100px;
