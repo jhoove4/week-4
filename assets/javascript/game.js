@@ -1,19 +1,22 @@
  
- 	var computerChoice = 19 + Math.floor(Math.random() *101);
+ 	// var computerChoice = 19 + Math.floor(Math.random() *101);
+ 	// var userChoices= 0;
+ 	// var crystalValue = [12,8,5,1];
+ 	// var win = 0;
+ 	// var loss = 0;
+ 	// var yourScore=0;
+
+ 	// computerChoice = 19 + Math.floor(Math.random() * 101);
+
+
+  $(document).ready (function(){
+  	var computerChoice = 19 + Math.floor(Math.random() *101);
  	var userChoices= 0;
  	var crystalValue = [12,8,5,1];
  	var win = 0;
  	var loss = 0;
  	var yourScore=0;
-
- 	computerChoice = 19 + Math.floor(Math.random() * 101);
-
-
-  $(document).ready (function(){
-  	// $('button').on('click', function(){
-  	// 	var buttonClicked = $(this).attr(crystalValue);
-
-  	// });
+  
  	function startGame(){
 	computerChoice = 19 + Math.floor(Math.random() * 120);
 		yourScore =0;
@@ -29,22 +32,18 @@
   		yourScore = yourScore + buttonValue;
   		console.log(yourScore);
   			$('#yourScore').html(yourScore);
-
-
-  			// buttonValue.push(crystalValue);
-  			// $('buttonValue').add(crystalValue);
   	});
-  	// $(userChoices).on('click', function(event){
-  	// 	userChoicess= $(this).attr(crystalValue);
-  	// 	console.log(crystalValue);
-  	// });
- 		$('#number').append(computerChoice);
+  	
+ 		$('#number').text(computerChoice);
+ 		console.log(computerChoice);
 
 
-		$('#yourScore').append(userChoices);
-		// $('#yourScore').push(crystalValue);
+		$('#yourScore').text(userChoices);
+		console.log(userChoices);
+
  			if(yourScore == computerChoice){
  				win++;
+ 				$('#wins').html(win);
  				startGame();
 				alert('Great Job! You are the crystal master');
 				 	confirm('Are You Ready To Play?');
@@ -52,11 +51,13 @@
 			}
 			if(yourScore > computerChoice){
 				loss++;
+				$('#losses').html(loss);
 				startGame();
 				alert('You LOSE! Now into the crystal abyss you go!');
 				 	confirm('Do You Dare To Play Again?');
 
 		}
+// 
 	});
 // 		document.onkeyup = function(event) {
 // guessesLeft--;	
