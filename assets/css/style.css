@@ -8,8 +8,7 @@ h2{
 	color:#00FFFF;
 	/*font-family: 'Ruslan Display';*/
 }
-body{
-	background-image:"http://fullhdpictures.com/wp-content/uploads/2015/12/Crystal-Backgrounds.jpg"
+body.background{
 	width: auto;
 	height: auto;
 } 
